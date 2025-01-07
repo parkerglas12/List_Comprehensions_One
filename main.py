@@ -58,4 +58,4 @@ print([(name, "Starts With Vowel" if name[0] in "aeiou" else "Starts With Conson
 print([(name, "Large Ord Score" if sum(ord(letter) for letter in name) > 500 else "Small Ord Score") for name in lst])
 
 # 20
-print([(name, ">1 vowels" if sum(1 for letter in name.lower() if letter in "aeiou") > 1 else "1< vowels", sum(ord(letter) for letter in name[::2])) for name in lst])
+print([(name, ">1 vowels" if sum(1 for letter in name.lower() if letter in "aeiou") > 1 else "1<= vowels", sum(ord(letter) for letter in name[::2])) for name in lst])
